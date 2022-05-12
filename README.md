@@ -3,8 +3,7 @@
 En este examen parcial de Análisis EDA y Transformación de Users he sido capaz de importar los dos ficheros csv en mi repositorio, posteriormente he realizado un 
 profundo análisis de ambos, en los cuales, he calculado diferentes sucesos, como la moda, la varianza, la mediana, acompañados de diversos cálculos estadísticos 
 simples. Esto ha sido posible de una manera fácil y eficaz gracias a pandas, cuyo valor es tratar estos diferentes cálculos de una manera rápida, relacionando una
-pequeña función a cada uno de ellos. Por si fuera poco, ha sido añadida una gráfica, hay muchos tipos de estas, y he obtado por la simpleza de un diagrama de barras
-como mejor campo viual.
+pequeña función a cada uno de ellos. Por si fuera poco, ha sido añadida una gráfica, hay muchos tipos de estas, y he obtado por la simpleza de un diagrama de barras como mejor campo viual.
 
 
 El código que he empleado para llevar a cabo el trabajo anterior es el siguiente:
