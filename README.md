@@ -1,5 +1,4 @@
 # Examen-parcial
-# Examen-parcial
 
 En este examen parcial de Análisis EDA y Transformación de Users he sido capaz de importar los dos ficheros csv en mi repositorio, posteriormente he realizado un 
 profundo análisis de ambos, en los cuales, he calculado diferentes sucesos, como la moda, la varianza, la mediana, acompañados de diversos cálculos estadísticos 
