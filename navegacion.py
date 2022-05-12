@@ -20,17 +20,17 @@ class Grafico:
 
 
 #Filas/Columnas
-class columnas:
+class Columnas:
   def __init__(self,csv):
     self.csv=csv
-  def operacion(self):
+  def calculo(self):
     print("La cantidad de columnas que hay es de:", self.csv.shape[1])
 
 
-class filas:
+class Filas:
   def __init__(self,csv):
     self.csv=csv
-  def operacion(self):
+  def calculo(self):
     print("La cantidad de filas que hay es de:", self.csv.shape[0])
 
 
@@ -40,7 +40,7 @@ class media:
     self.columna=columna
     self.csv=csv
 
-def operacion(self):
+def calculo(self):
   media=self.csv[self.columna].mean()
   print("La media es la siguiente:")
   print(media)
@@ -50,20 +50,20 @@ class Moda:
   def __init__(self,columna,csv):
     self.columna=columna
     self.csv=csv
-  def operacion(self):
-    moda=self.csv[self.columna].mode()
+  def calculo(self):
+    Moda=self.csv[self.columna].mode()
     print("La moda es la siguiente:")
-    print(moda)
+    print(Moda)
 
 #Mediana
 class Mediana:
   def __init__(self,columna,csv):
     self.columna=columna
     self.csv=csv
-  def operacion(self):
-    mediana=self.csv[self.columna].median()
+  def calculo(self):
+    Mediana=self.csv[self.columna].median()
     print("La mediana es la siguiente:")
-    print(mediana)
+    print(Mediana)
 
 
 #desv tipi
@@ -71,10 +71,10 @@ class desvia_típica:
   def __init__(self,csv,columna):
     self.csv=csv
     self.columna=columna
-  def operacion(self):
-    desv=self.csv[self.columna].mad()
+  def calculo(self):
+    Desv=self.csv[self.columna].mad()
     print("La desv típic es :")
-    print(desv)
+    print(Desv)
 
 
 #varianza
@@ -83,10 +83,10 @@ class varianza:
   def __init__(self,csv,columna):
     self.csv=csv
     self.columna=columna
-  def operacion(self):
-    varianza=self.csv[self.columna].var()
+  def calculo(self):
+    Varianza=self.csv[self.columna].var()
     print("La Varianza es :")
-    print(varianza)
+    print(Varianza)
 
 
 #rango
@@ -94,10 +94,10 @@ class Rango:
   def __init__(self,columna,csv):
     self.columna=columna
     self.csv=csv
-  def operacion(self):
-    rango=self.csv[self.columna].mode()
+  def calculo(self):
+    Rango=self.csv[self.columna].mode()
     print("El rango es el siguiente:")
-    print(rango)
+    print(Rango)
 
 
 # Min max
@@ -105,10 +105,10 @@ class Min:
   def __init__(self,columna,csv):
     self.columna=columna
     self.csv=csv
-  def operacion(self):
-    min=self.csv[self.columna].min()
+  def calculo(self):
+    Min=self.csv[self.columna].min()
     print("El valor min es el siguiente:")
-    print(min)
+    print(Min)
 
 
 
@@ -116,10 +116,10 @@ class Max:
   def __init__(self,columna,csv):
     self.columna=columna
     self.csv=csv
-  def operacion(self):
-    max=self.csv[self.columna].max()
+  def calculo(self):
+    Max=self.csv[self.columna].max()
     print("El valor max es el siguiente:")
-    print(max)
+    print(Max)
 
 
 #Cuartiles
@@ -127,19 +127,19 @@ class Q1:
   def __init__(self,csv,columna):
     self.csv=csv
     self.columna=columna
-  def operacion(self):
-    q1=self.csv[self.columna].mad()
+  def calculo(self):
+    Q1=self.csv[self.columna].mad()
     print("El primer cuartil  es :")
-    print(q1)
+    print(Q1)
 
 
 class Q3:
   def __init__(self,csv,columna):
     self.csv=csv
     self.columna=columna
-  def operacion(self):
-    q3=self.csv[self.columna].mad()
+  def calculo(self):
+    Q3=self.csv[self.columna].mad()
     print("El tercer cuartil  es :")
-    print(q3)
+    print(Q3)
 
 

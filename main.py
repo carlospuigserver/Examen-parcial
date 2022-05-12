@@ -1,4 +1,7 @@
 import pandas as pd
+conversaciones=pd.read_csv("conversaciones.csv")
+navegacion=pd.read_csv("navegación.csv")
+
 
 from conversaciones import filas
 from conversaciones import columnas
@@ -13,12 +16,18 @@ from conversaciones import q3
 from conversaciones import desv
 from conversaciones import mediana
 
-conversaciones=pd.read_csv("conversaciones.csv")
-
-
-navegacion=pd.read_csv("navegación.csv")
-
-
+from navegacion import Filas
+from navegacion import Columnas
+from navegacion import Moda
+from navegacion import Media
+from navegacion import Varianza
+from navegacion import Rango
+from navegacion import in
+from navegacion import Max
+from navegacion import Q1
+from navegacion import Q3
+from navegacion import Desv
+from navegacion import Mediana
 
 
 
@@ -93,54 +102,54 @@ print("El rango intercuartílico es {}".format(rango_int))
 
 # Numero filas
 filasN=filas(navegacion)
-filasN.operacion()
+filasN.calculo()
 
 #Num column
 columnasN=columnas(navegacion)
-columnasN.operacion()
+columnasN.calculo()
 
 #Valores max
 max_N = max(navegacion,"user_recurrent")
-max.operacion()
+max.calculo()
 
 #Valores min
 min_N = min(navegacion,"user_recurrent")
-min.operacion()
+min.calculo()
 
 
 #Media
 media_N = media(navegacion,"user_recurrent")
-media.operacion()
+media.calculo()
 
 #Moda 
 moda_N = moda(navegacion,"user_recurrent")
-moda.operacion()
+moda.calculo()
 
 #Mediana
 mediana_N = mediana(navegacion,"user_recurrent")
-mediana.operacion()
+mediana.calculo()
 
 #Desviación típica
 desv_típ_N = desv(navegacion,"user_recurrent")
-desv.operacion()
+desv.calculo()
 
 
 #Varianza
 varianza_N = varianza(navegacion,"user_recurrent")
-varianza.operacion()
+varianza.calculo()
 
 #Rango
 Rango_N = rango(navegacion,"user_recurrent")
-rango.operacion()
+rango.calculo()
 
 
 #Q1
 q1_N = q1(navegacion,"user_recurrent")
-q1.operacion()
+q1.calculo()
 
 #Q3
 q3_N = q3(navegacion,"user_recurrent")
-q3.operacion()
+q3.calculo()
 
 # Rango intercuartílico
 a= navegacion["user_recurrent"].quantile(0.25)
